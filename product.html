@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | RingTech Global</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        #navbar { background-color: #0a192f !important; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30 bg-[#0a192f] overflow-x-hidden flex flex-col min-h-screen w-full text-white">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-[#0a192f] py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="inline-flex flex-shrink-0 items-center"><img src="./assets/images/logo.png" alt="RingTech Global" class="h-10 md:h-12 w-auto object-contain"></a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="about.html" class="text-slate-200 hover:text-white text-sm font-semibold transition-colors">About Us</a>
+                    
+                    <div class="relative group">
+                        <a href="products.html" class="text-white text-sm font-semibold transition-colors inline-flex items-center py-2">
+                            Products
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </a>
+                        <div class="absolute left-0 top-full w-56 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="bg-[#112240] border border-white/10 rounded-xl shadow-2xl py-2 overflow-hidden">
+                                <a href="switches.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Switches</a>
+                                <a href="routers.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Routers</a>
+                                <a href="access-points.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Access Points</a>
+                                <a href="ip-phones.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">IP Phones</a>
+                                <a href="firewalls.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Security Firewalls</a>
+                                <a href="servers-storage.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Servers & Storage</a>
+                                <a href="transceivers.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Transceivers</a>
+                                <a href="power-solutions.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Power Solutions</a>
+                                <a href="cables-accessories.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Cables & Accessories</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <a href="DigitalTransformation.html" class="text-slate-200 hover:text-white text-sm font-semibold transition-colors inline-flex items-center py-2">
+                            Digital Transformation
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </a>
+                        <div class="absolute left-0 top-full w-64 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
+                            <div class="bg-[#112240] border border-white/10 rounded-xl shadow-2xl py-2 overflow-hidden">
+                                <a href="web-development.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Web/App Development</a>
+                                <a href="ringcrm-solutions.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">RingCRM Solutions</a>
+                                <a href="whatsapp-marketing.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">WhatsApp Marketing</a>
+                                <a href="cyber-security.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Cyber Security</a>
+                                <a href="automation-ai.html" class="block px-5 py-2.5 text-sm text-slate-300 hover:bg-blue-600/20 hover:text-white transition-colors">Automation & AI</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="blogs.html" class="text-slate-200 hover:text-white text-sm font-semibold transition-colors">Blogs</a>
+                    <a href="tracking.html" class="text-slate-200 hover:text-white text-sm font-semibold transition-colors">Shipment Tracking</a>
+                    
+                    <div class="flex items-center space-x-4">
+                        <a href="contact.html" class="relative text-slate-300 hover:text-white transition-colors p-2" title="View Quote List">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                            <span class="cart-badge absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center" style="display: none;">0</span>
+                        </a>
+                        <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white p-2">
+                        <svg class="w-7 h-7 block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-24 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="pt-4 mb-4">
+                <a href="javascript:history.back()"
+                    class="inline-flex items-center text-blue-400 hover:text-blue-300 font-bold transition-all group">
+                    <svg class="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    <span>Back</span>
+                </a>
+            </div>
+
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12 items-start">
+                
+                <div class="bg-white rounded-3xl p-10 flex items-center justify-center shadow-2xl aspect-square relative">
+                    <img id="product-image" src="" alt="Product Image" class="max-w-full max-h-full object-contain mix-blend-multiply">
+                </div>
+
+                <div class="flex flex-col justify-center pt-4">
+                    <h1 id="product-title" class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Loading...</h1>
+                    <p id="product-subtitle" class="text-slate-400 text-lg mb-6"></p>
+                    
+                    <div class="flex items-center text-xs font-bold tracking-widest text-blue-400 uppercase mb-10">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <span id="product-tags">Brand, Category</span>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-8 space-y-4">
+                        <button id="add-to-quote-btn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-500/30 flex justify-center items-center group">
+                            <span>Get Quote</span>
+                            <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#112240] border border-white/10 rounded-2xl overflow-hidden">
+                <div class="flex border-b border-white/10">
+                    <button class="px-8 py-4 bg-blue-600 text-white font-bold text-sm">Description</button>
+                </div>
+                
+                <div class="p-8 md:p-12 relative">
+                    <p id="product-description" class="text-slate-300 leading-relaxed mb-10 relative z-10"></p>
+
+                    <h4 class="text-white font-bold text-lg mb-6 flex items-center relative z-10">
+                        <span class="w-6 h-1 bg-blue-500 mr-3 rounded-full"></span>
+                        Technical Specifications
+                    </h4>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12 relative z-10" id="product-specs">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contact" class="bg-[#050d1a] pt-16 pb-8 border-t border-slate-800 w-full overflow-hidden mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <a href="index.html" class="inline-flex flex-shrink-0 items-center"><img src="./assets/images/logo.png" alt="RingTech Global" class="h-10 md:h-12 w-auto object-contain"></a>
+                    <p class="text-slate-400 text-sm leading-relaxed pr-4">Empowering businesses through innovative digital transformation, robust web solutions, and scalable IT infrastructure.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider text-sm mb-5">Solutions</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Products</a></li>
+                        <li><a href="DigitalTransformation.html" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Digital Transformation</a></li>
+                        <li><a href="tracking.html" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Shipment Tracking</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider text-sm mb-5">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div><h4 class="text-white font-bold uppercase tracking-wider text-sm mb-5">Contact Us</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li>
+                            <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-start">
+                                <span class="text-slate-300">Email:</span> <a href="mailto:info@ringtechglobal.com" class="hover:text-blue-400 transition-colors">info@ringtechglobal.com</a>
+                                <span class="text-slate-300">Enquiry:</span> <a href="tel:+918451850006" class="hover:text-blue-400 transition-colors">+91 8451 85 0006</a>
+                                <span class="text-slate-300">Sales:</span>
+                                <div class="flex flex-col">
+                                    <a href="tel:+918097437011" class="hover:text-blue-400 transition-colors">+91 8097 43 7011</a>
+                                    <a href="tel:+918097447011" class="hover:text-blue-400 transition-colors">+91 8097 44 7011</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pt-4 border-t border-white/10">
+                            <span class="text-slate-300 font-bold block mb-2">India:</span>
+                            <p class="text-slate-400 leading-relaxed font-medium">
+                                RingTech Global<br>
+                                Office 17, Plot No. 112,<br>
+                                Mahavir Dham, Sector-12,<br>
+                                Vashi, Navi Mumbai - 400703
+                            </p>
+                        </li>
+                        <li class="pt-4 border-t border-white/10">
+                            <span class="text-slate-300 font-bold block mb-2">United Arab Emirates (UAE):</span>
+                            <p class="text-slate-400">RingTech Global</p>
+                        </li>
+                        <li class="pt-4 border-t border-white/10">
+                            <span class="text-slate-300 font-bold block mb-2">China, Hong Kong:</span>
+                            <p class="text-slate-400">Warehouse</p>
+                        </li>
+                    </ul></div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-2 md:space-y-0">
+                <p class="text-slate-500 text-sm">&copy; 2026 RingTech Global. All rights reserved.</p>
+                <p class="text-slate-500 text-sm">Powered by <a href="https://sahyadricode.online/" target="_blank" class="text-blue-400 font-medium hover:text-white transition-colors">Sahyadri Code Works</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/quote.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadProductDetails);
+    </script>
+</body>
+</html>
+
+
+
