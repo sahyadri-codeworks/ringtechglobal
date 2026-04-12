@@ -166,7 +166,11 @@ function renderLogos() {
     logoGrid.innerHTML = '';
     
     // Logos that need extra scaling due to built-in padding or aspect ratio
-    const scaleUpLogos = ["MikroTik", "TP-Link", "Aruba Networks", "Checkpoint", "Seagate", "Schneider Electric", "APC"];
+    const scaleUpLogos = [
+        "MikroTik", "TP-Link", "Aruba Networks", "Checkpoint", "Seagate",
+        "Extreme Networks", "Hewlett Packard Enterprise", "Cambium Networks",
+        "Juniper Networks", "Arista Networks", "Ruckus Networks", "Allied Telesis"
+    ];
     
     partners.forEach(partner => {
         const isActive = activeCategory === "All" || partner.categories.includes(activeCategory);
@@ -176,8 +180,8 @@ function renderLogos() {
             }`;
 
         const isSmallLogo = scaleUpLogos.includes(partner.name);
-        const baseScale = isSmallLogo ? "scale-[1.35]" : "scale-100";
-        const hoverScale = isSmallLogo ? "hover:scale-[1.5]" : "hover:scale-110";
+        const baseScale = isSmallLogo ? "scale-[1.25]" : "scale-100";
+        const hoverScale = isSmallLogo ? "hover:scale-[1.4]" : "hover:scale-110";
 
         const img = document.createElement('img');
         img.src = partner.src;

@@ -25,7 +25,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="inline-flex flex-shrink-0 items-center"><img src="./assets/images/logo.png" alt="RingTech Global" class="h-10 md:h-12 w-auto object-contain"></a>
+                    <a href="index.html" class="inline-flex flex-shrink-0 items-center"><img src="./assets/images/logo.png" alt="RingTech Global" class="h-12 md:h-14 w-auto object-contain"></a>
                 </div>
 
                 <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
@@ -337,8 +337,8 @@
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
-                            <textarea name="message" rows="4"
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Message *</label>
+                            <textarea name="message" rows="4" required
                                 class="w-full bg-[#0a192f] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none"></textarea>
                         </div>
 
@@ -524,8 +524,17 @@
 
             // Handle Country Change
             countrySelect.addEventListener('change', () => {
-                phoneInput.value = countrySelect.value + ' ';
+                const prefix = countrySelect.value + ' ';
+                phoneInput.value = prefix;
                 phoneInput.focus();
+                
+                // Keep prefix fixed
+                phoneInput.onkeydown = function(e) {
+                    const val = this.value;
+                    if (e.key === 'Backspace' && val === prefix) {
+                        e.preventDefault();
+                    }
+                };
             });
 
             let cart = JSON.parse(localStorage.getItem('quoteCart')) || [];
@@ -608,9 +617,14 @@
             // Handle form submission: Clear cart and and allow standard Formspree redirect
             const quoteForm = document.getElementById('quoteForm');
             quoteForm.addEventListener('submit', (e) => {
-                if (cart.length === 0) {
+                // Phone validation check
+                const prefix = countrySelect.value.trim();
+                const phoneVal = phoneInput.value.trim();
+                
+                if (phoneVal === prefix || phoneVal === "") {
                     e.preventDefault();
-                    alert("Please add at least one product to your Quote List before submitting.");
+                    alert("Please enter a valid phone number.");
+                    phoneInput.focus();
                     return;
                 }
 
