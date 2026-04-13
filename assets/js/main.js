@@ -169,7 +169,8 @@ function renderLogos() {
     const scaleUpLogos = [
         "MikroTik", "TP-Link", "Aruba Networks", "Checkpoint", "Seagate",
         "Extreme Networks", "Hewlett Packard Enterprise", "Cambium Networks",
-        "Juniper Networks", "Arista Networks", "Ruckus Networks", "Allied Telesis"
+        "Juniper Networks", "Arista Networks", "Ruckus Networks", "Allied Telesis",
+        "Fortinet", "Schneider Electric"
     ];
     
     partners.forEach(partner => {
