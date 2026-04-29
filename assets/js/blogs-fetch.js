@@ -59,7 +59,7 @@ async function fetchPublicBlogs() {
                             <span class="flex items-center"><svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> ${post.read_time || '5 Min Read'}</span>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-4 leading-snug group-hover:text-blue-400 transition-colors duration-300">${post.title}</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-6 border-b border-white/10 pb-6">
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 border-b border-white/10 pb-6 overflow-hidden text-ellipsis" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
                             ${post.content}
                         </p>
                         <div class="flex items-center justify-between">
